@@ -1,0 +1,43 @@
+TASK 1 TO PRINT UNIQUE NUMBERS;
+
+Done a program to print the unique numbers in the array.
+I have used a set datastructure for printing the unique numbers.
+
+arr=[10,20,10,30,40];
+function uniquenumber(arr){
+  const set = new Set(arr);
+  return set;
+}
+console.log(uniquenumber(arr));
+
+
+TASK 2 TO FIND PALINDROME:
+
+I have used in build methods like split(),reverse(),join() to find palindrome.
+
+
+const str = "malayalam";
+function palindrome(str){
+    const arr = str.split('');
+    const reversearray = arr.reverse();
+    const reversestring = reversearray.join('');
+    if (str === reversestring) {
+        console.log("It is a palindrome");
+    }
+    else{
+        console.log("It is not a palindrome");
+    }
+}
+
+palindrome(str);
+
+
+TASK 3 TWO SUM (LEET CODE):
+
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+
+This is the sample output which is to be done in the two sum problem.
+
+the numbers in the array is to be summed to print the target number and output must be the index of the numbers that have been used for the sum operation.
